@@ -1,13 +1,19 @@
 import { useState, useEffect } from 'react';
 
+
 export const useApi = (endpoint) => {
+
+
+  const base_url = process.env.REACT_APP_BASE_URL;
+
   const [apiData, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+
   useEffect(() => {
     const LogoutData = localStorage.getItem('login');
-    const base_url = 'https://custom.mystagingserver.site/mtrecords/public/api/'
+    // const base_url = 'https://custom.mystagingserver.site/mtrecords/public/api/'
     async function fetchData() {
       document.querySelector('.loaderBox').classList.remove("d-none");
       try {

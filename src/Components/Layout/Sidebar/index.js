@@ -37,7 +37,7 @@ export const Sidebar = (props) => {
             <span className="sideIcon">
               <FontAwesomeIcon icon={faMessage} />
             </span>
-            <span className="sideLinkText">Volusteers Management</span>
+            <span className="sideLinkText">Volunteers Management</span>
           </Link>
         </li>
 

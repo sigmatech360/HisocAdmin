@@ -53,7 +53,7 @@ import Error from "../Screens/Error";
 
 export default function AdminRouter() {
   return (
-    <BrowserRouter basename="/HisocAdmin">
+    <BrowserRouter basename="/admin">
       <Routes>
         <Route path="/" element={<AdminLogin />} />
         <Route path="/login" element={<AdminLogin />} />
